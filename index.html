@@ -179,11 +179,13 @@
 
 <style>
 .khmer-name {
-    font-family: 'KHMMOOL', 'Noto Sans Khmer', sans-serif; /* custom or Noto Khmer fallback */
-    font-feature-settings: "liga"; /* enable ligatures for Khmer */
+    font-family: 'KHMMOOL', 'Noto Sans Khmer', sans-serif; /* ensure proper Khmer font */
+    white-space: nowrap;       /* prevent breaking in the middle */
+    word-break: keep-all;      /* keep characters together */
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     unicode-bidi: isolate;
+    font-size: 20px;           /* increase font size if needed */
 }
 </style>
                     </div>
